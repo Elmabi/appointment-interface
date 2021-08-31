@@ -1,7 +1,6 @@
 import { IoIosArchive } from "react-icons/io";
 import AddAppointment from "./components/AddAppointment";
 import AppointmentInfo from "./components/AppointmentInfo";
-
 import Search from "./components/Search";
 import appointmentList from "./data.json";
 
