@@ -1,7 +1,11 @@
+import { IoIosArchive } from "react-icons/io";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Your Appointments</h1>
+    <div>
+      <h1>
+        <IoIosArchive /> Your Appointments
+      </h1>
     </div>
   );
 }
