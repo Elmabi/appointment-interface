@@ -1,6 +1,9 @@
 import { IoIosArchive } from "react-icons/io";
 import AddAppointment from "./components/AddAppointment";
+import AppointmentInfo from "./components/AppointmentInfo";
+
 import Search from "./components/Search";
+import appointmentList from "./data.json";
 
 function App() {
   return (
@@ -11,6 +14,11 @@ function App() {
       </h1>
       <AddAppointment />
       <Search />
+      <ul className="divide-y divide-gray-200">
+        {appointmentList.map((appointment) => (
+          <AppointmentInfo appointment={appointment} key={appointment.id} />
+        ))}
+      </ul>
     </div>
   );
 }
