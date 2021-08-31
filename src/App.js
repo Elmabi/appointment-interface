@@ -1,4 +1,5 @@
 import { IoIosArchive } from "react-icons/io";
+import Search from "./components/Search";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         <IoIosArchive className="inline-block text-red-400 align-top" /> Your
         Appointments
       </h1>
+      <Search />
     </div>
   );
 }
