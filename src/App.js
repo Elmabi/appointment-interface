@@ -6,7 +6,7 @@ import appointmentList from "./data.json";
 
 function App() {
   return (
-    <div className="App container mx-auto mt-3 font-thin">
+    <div className="App container mx-auto mt-3 font-thin bg-gray-50">
       <h1 className="text-5xl mb-3">
         <IoIosArchive className="inline-block text-red-400 align-top" /> Your
         Appointments
