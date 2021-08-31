@@ -2,9 +2,10 @@ import { IoIosArchive } from "react-icons/io";
 
 function App() {
   return (
-    <div>
-      <h1>
-        <IoIosArchive /> Your Appointments
+    <div className="App container mx-auto mt-3 font-thin">
+      <h1 className="text-5xl">
+        <IoIosArchive className="inline-block text-red-400 align-top" /> Your
+        Appointments
       </h1>
     </div>
   );
