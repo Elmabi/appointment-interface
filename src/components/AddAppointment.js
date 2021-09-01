@@ -1,5 +1,6 @@
 import { BiCalendar } from "react-icons/bi";
 import React, { useReducer, useState } from "react";
+import { SuccessMessage } from "./SuccessMessage";
 
 const AddAppointment = ({ onSendAppointment, LastId }) => {
   let [toggleForm, setToggleForm] = useReducer(
@@ -27,6 +28,7 @@ const AddAppointment = ({ onSendAppointment, LastId }) => {
     onSendAppointment(apppointmentInfo);
     setFormData(clearData);
     setToggleForm(!toggleForm);
+    SuccessMessage();
   }
 
   let [formData, setFormData] = useState(clearData);

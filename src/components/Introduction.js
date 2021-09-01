@@ -2,7 +2,7 @@ import React from "react";
 
 export function Introduction({ myImage }) {
   return (
-    <figure class="md:flex border-4 border-blue-500 border-opacity-75 rounded-xl p-8 md:p-0 mb-20">
+    <figure class="md:flex border-4 border-blue-500 border-opacity-75 shadow-2xl rounded-xl p-8 md:p-0 mb-20">
       <img
         class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
         src={myImage}
