@@ -3,6 +3,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import AddAppointment from "./components/AddAppointment";
 import AppointmentInfo from "./components/AppointmentInfo";
 import Search from "./components/Search";
+import { Introduction } from "./components/Introduction";
+import myImage from "./bon.jpg";
 
 function App() {
   let [appointmentList, setAppointmentList] = useState([]);
@@ -21,6 +23,7 @@ function App() {
 
   return (
     <div className="App container mx-auto my-20 font-thin bg-gray-50">
+      <Introduction myImage={myImage} />
       <h1 className="text-5xl mb-3 font-medium ">
         <IoIosArchive className="inline-block text-red-400 align-top " /> Your
         Appointments
