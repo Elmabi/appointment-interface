@@ -8,6 +8,15 @@ import myImage from "./bon.jpg";
 
 function App() {
   let [appointmentList, setAppointmentList] = useState([]);
+  let [query, setQuery] = useState("");
+
+  const filteredAppointments = appointmentList.filter((item) => {
+    return (
+      item.petName.toLowerCase().includes(query.toLowerCase()) ||
+      item.ownerName.toLowerCase().includes(query.toLowerCase()) ||
+      item.aptNotes.toLowerCase().includes(query.toLowerCase())
+    );
+  });
 
   const fetchData = useCallback(() => {
     fetch("./data.json")
@@ -29,10 +38,10 @@ function App() {
         Appointments
       </h1>
       <AddAppointment />
-      <Search />
+      <Search query={query} onQueryChange={(myQuery) => setQuery(myQuery)} />
       <div className="scrolling-auto rounded overflow-auto h-96 bg-gray-300 w-auto m-auto w-4 scrollbar-hide">
         <ul className="divide-y divide-gray-200">
-          {appointmentList.map((appointment) => (
+          {filteredAppointments.map((appointment) => (
             <AppointmentInfo
               appointment={appointment}
               key={appointment.id}
