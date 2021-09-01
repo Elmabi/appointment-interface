@@ -33,7 +33,17 @@ function App() {
       <div className="scrolling-auto rounded overflow-auto h-96 bg-gray-300 w-auto m-auto w-4 scrollbar-hide">
         <ul className="divide-y divide-gray-200">
           {appointmentList.map((appointment) => (
-            <AppointmentInfo appointment={appointment} key={appointment.id} />
+            <AppointmentInfo
+              appointment={appointment}
+              key={appointment.id}
+              onDeleleAppointment={(appointmentId) => {
+                setAppointmentList(
+                  appointmentList.filter(
+                    (appointment) => appointment.id !== appointmentId
+                  )
+                );
+              }}
+            />
           ))}
         </ul>
       </div>
