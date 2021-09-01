@@ -1,10 +1,24 @@
 import { IoIosArchive } from "react-icons/io";
+import React, { useState, useEffect, useCallback } from "react";
 import AddAppointment from "./components/AddAppointment";
 import AppointmentInfo from "./components/AppointmentInfo";
 import Search from "./components/Search";
-import appointmentList from "./data.json";
 
 function App() {
+  let [appointmentList, setAppointmentList] = useState([]);
+
+  const fetchData = useCallback(() => {
+    fetch("./data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setAppointmentList(data);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
   return (
     <div className="App container mx-auto my-20 font-thin bg-gray-50">
       <h1 className="text-5xl mb-3 font-medium ">
