@@ -1,3 +1,14 @@
+## Info
+
+This is an appointment interface design by React and Tailwind CSS
+The appointment's informations comes from a JSON file
+
+You can :
+
+1 - Add an appointment
+2 - Delete an appointment
+3 - Sort appointments by Pet Name, Owner Name and Date in Ascending or descending order.
+
 ## Available Scripts
 
 In the project directory, you can run:
