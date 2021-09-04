@@ -36,3 +36,21 @@ Your app is ready to be deployed!
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+### Needed library
+
+# Installing react-icons
+
+`npm install react-icons --save`
+
+# Installing Tailwind CSS
+
+`npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9 @tailwindcss/forms`
+
+# Installing Craco needed by Tailwind
+
+`npm install @craco/craco`
+
+# Links to Tailwind Installation
+
+`https://tailwindcss.com/docs/guides/create-react-app`

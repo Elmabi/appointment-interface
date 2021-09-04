@@ -94,7 +94,7 @@ const AddAppointment = ({ onSendAppointment, LastId }) => {
               htmlFor="aptDate"
               className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              Apt Date
+              Appointment Date
             </label>
             <div className="mt-1 sm:mt-0 sm:col-span-2">
               <input
@@ -115,7 +115,7 @@ const AddAppointment = ({ onSendAppointment, LastId }) => {
               htmlFor="aptTime"
               className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
             >
-              Apt Time
+              Appointment Time
             </label>
             <div className="mt-1 sm:mt-0 sm:col-span-2">
               <input
