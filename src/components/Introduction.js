@@ -14,8 +14,24 @@ export function Introduction({ myImage }) {
         <blockquote>
           <p class="text-lg font-semibold">
             “Very passionate about web development. This interface have being
-            developed using React and Tailwind CSS. Very happy about it”
+            developed using React, Sweetarlet and Tailwind CSS. Very happy about
+            it”
+            <br />
+            <br />
+            You can :
           </p>
+          <ul className="list-decimal list-outside md:list-inside font-semibold text-red-400 antialiased">
+            <li>Add an appointment</li>
+            <li>Delete an appointment</li>
+            <li>
+              Search an appointment by <em>owner name</em>, <em>pet name</em> or{" "}
+              <em>appointment notes</em>
+            </li>
+            <li>
+              Sort appointments by <em>pet Name</em>, <em>owner name</em> or{" "}
+              <em>date</em> in ascending or descending order.
+            </li>
+          </ul>
         </blockquote>
         <figcaption class="font-medium">
           <div class="text-cyan-600">Armel Franck Djiongo</div>
